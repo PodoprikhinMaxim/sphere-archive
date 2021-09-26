@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.hadoop:hadoop-common:2.8.0'
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-core:2.8.0'
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.8.0'
+    compile 'com.google.guava:guava:24.0-jre'
+    compile 'org.jsoup:jsoup:1.11.3'
+    compile 'org.apache.spark:spark-core_2.10:1.6.0'
+    compile 'org.apache.spark:spark-mllib_2.10:1.6.0'
+    //compile 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.6.0-cdh5.14.0'
+}
